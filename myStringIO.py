@@ -14,7 +14,7 @@ def _test_ifclosed(closed):
         raise ValueError, "I/O operation on closed file"
 
 
-class MyStringIO():
+class MyStringIO:
     def __init__(self, buf = ""):
         if not isinstance(buf, basestring):
             buf = str(buf)
